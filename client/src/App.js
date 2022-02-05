@@ -1,7 +1,13 @@
 import logo from "./logo.svg";
+// import ScrollReveal from "scrollreveal";
+// import { useEffect } from "react";
 import "./App.css";
 
 function App() {
+  // useEffect(() => {
+  //   ScrollReveal().reveal(".App-logo", { delay: 250, reset: true });
+  // }, []);
+
   return (
     <div className="App">
       <header className="App-header">
