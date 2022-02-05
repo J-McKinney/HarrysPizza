@@ -21,3 +21,7 @@
 ## Specials Page
 
 ## Contact Page
+
+## Navbar
+
+## Footer

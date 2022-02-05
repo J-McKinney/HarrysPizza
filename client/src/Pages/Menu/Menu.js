@@ -4,7 +4,9 @@ import Styles from "./Menu.module.css";
 function Menu() {
   return (
     <>
-      <div className={Styles.wrapper}></div>
+      <div className={Styles.wrapper}>
+        <h1>Menu</h1>
+      </div>
     </>
   );
 }

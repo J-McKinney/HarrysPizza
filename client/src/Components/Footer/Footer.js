@@ -4,7 +4,9 @@ import Styles from "./Footer.module.css";
 function Footer() {
   return (
     <>
-      <div className={Styles.wrapper}></div>
+      <div className={Styles.wrapper}>
+        <h1>Footer</h1>
+      </div>
     </>
   );
 }

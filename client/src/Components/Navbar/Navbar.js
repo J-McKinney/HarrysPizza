@@ -4,7 +4,9 @@ import Styles from "./Navbar.module.css";
 function Navbar() {
   return (
     <>
-      <div className={Styles.wrapper}></div>
+      <div className={Styles.wrapper}>
+        <h1>Navbar</h1>
+      </div>
     </>
   );
 }
