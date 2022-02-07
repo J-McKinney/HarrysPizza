@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Nav,
   Navbar,
@@ -8,14 +7,17 @@ import {
   NavLink,
   Collapse,
 } from "reactstrap";
-import { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Styles from "./Navbar.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
-  const [open, setOpen] = useState;
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    
+  const myref = React.useRef(null);
+
+  function handleClick() {
+    myref.current.classList.add("toggled");
   }
 
   return (
@@ -25,8 +27,14 @@ function NavBar() {
           <NavbarBrand className="me-auto" href="/">
             reactstrap
           </NavbarBrand>
-          <NavbarToggler className="me-2" onClick={function noRefCheck() {}} />
-          <Collapse navbar>
+          <NavbarToggler
+            className="me-2"
+            onClick={() => {
+              setIsOpen(!isOpen);
+              handleClick();
+            }}
+          />
+          <Collapse navbar isOpen={isOpen} ref={myref}>
             <Nav navbar>
               <NavItem>
                 <NavLink href="/components/">Components</NavLink>
