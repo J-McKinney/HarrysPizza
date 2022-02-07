@@ -1,6 +1,11 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 // import ScrollReveal from "scrollreveal";
 // import { useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from "./Pages/Landing/Landing";
+import Menu from "./Pages/Menu/Menu";
+import Specials from "./Pages/Specials/Specials";
+import Contact from "./Pages/Contact/Contact";
 import "./App.css";
 
 function App() {
@@ -10,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -23,7 +28,15 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/Menu" component={Menu} />
+          <Route exact path="/Specials" component={Specials} />
+          <Route exact path="/Contact" component={Contact} />
+        </Switch>
+      </Router>
     </div>
   );
 }
