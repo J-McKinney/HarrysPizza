@@ -1,11 +1,13 @@
 // import logo from "./logo.svg";
 // import ScrollReveal from "scrollreveal";
 // import { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import Menu from "./Pages/Menu/Menu";
 import Specials from "./Pages/Specials/Specials";
 import Contact from "./Pages/Contact/Contact";
+import Nav from "./Components/Navbar/NavBar";
 import "./App.css";
 
 function App() {
@@ -30,11 +32,14 @@ function App() {
         </a>
       </header> */}
       <Router>
+        <Nav />
         <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/Menu" component={Menu} />
-          <Route exact path="/Specials" component={Specials} />
-          <Route exact path="/Contact" component={Contact} />
+          <React.StrictMode>
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/Menu" component={Menu} />
+            <Route exact path="/Specials" component={Specials} />
+            <Route exact path="/Contact" component={Contact} />
+          </React.StrictMode>
         </Switch>
       </Router>
     </div>

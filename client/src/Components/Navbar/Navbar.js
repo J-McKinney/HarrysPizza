@@ -11,14 +11,8 @@ import React, { useState } from "react";
 import Styles from "./Navbar.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function NavBar() {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const myref = React.useRef(null);
-
-  function handleClick() {
-    myref.current.classList.add("toggled");
-  }
 
   return (
     <>
@@ -31,18 +25,18 @@ function NavBar() {
             className="me-2"
             onClick={() => {
               setIsOpen(!isOpen);
-              handleClick();
             }}
           />
-          <Collapse navbar isOpen={isOpen} ref={myref}>
+          <Collapse navbar isOpen={isOpen}>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/Menu/">Menu</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
-                </NavLink>
+                <NavLink href="/Specials/">Specials</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Contact/">Contact Us</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -50,6 +44,6 @@ function NavBar() {
       </div>
     </>
   );
-}
+};
 
 export default NavBar;
