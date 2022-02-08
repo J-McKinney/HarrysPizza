@@ -4,11 +4,11 @@
 ## https://roll-of-lasagna.netlify.app/ 
 ## custom favicon icon for tab
 ## loading pizza spinner for each page
-## Navbar with links to each page
+## Navbar with links to each page////////////////////////////////////////////////////////
 ## fade in animation on scroll for each section
 ## onHover color animation for buttons
 ## Landing page with:
-## Hero Banner with restaurant name front and center
+## Hero Banner with restaurant name front and center/////////////////////////////////////
 ## Our story left and pic right
 ## another hero banner with Fresh ingredients explaintaion
 ## left pic and great recipes right

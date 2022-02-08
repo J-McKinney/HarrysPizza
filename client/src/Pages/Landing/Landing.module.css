@@ -1,11 +1,38 @@
 .wrapper {
+  text-align: center;
+}
+
+.bgImg {
   background-image: url("../../assets/pizzaBackground.jpg");
-  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.h1 {
-  position: fixed;
+.banner1 {
+  height: 30rem;
+  width: 50vw;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.title1 {
+  font-family: "Rock Salt", cursive;
+  color: white;
+  font-size: calc(60px + 2vmin);
 }

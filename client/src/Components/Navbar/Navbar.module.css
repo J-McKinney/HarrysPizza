@@ -4,4 +4,6 @@
   min-width: 100vw;
   background: #fff;
   z-index: 1;
+  text-align: center;
+  font-family: "Rock Salt", cursive;
 }
