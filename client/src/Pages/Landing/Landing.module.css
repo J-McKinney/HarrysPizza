@@ -1,0 +1,11 @@
+.wrapper {
+  background-image: url("../../assets/pizzaBackground.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h1 {
+  position: fixed;
+}

@@ -19,7 +19,7 @@ const NavBar = () => {
       <div className={Styles.wrapper}>
         <Navbar color="faded" light>
           <NavbarBrand className="me-auto" href="/">
-            reactstrap
+            Harry's Pizza
           </NavbarBrand>
           <NavbarToggler
             className="me-2"
@@ -29,6 +29,9 @@ const NavBar = () => {
           />
           <Collapse navbar isOpen={isOpen}>
             <Nav navbar>
+              <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="/Menu/">Menu</NavLink>
               </NavItem>

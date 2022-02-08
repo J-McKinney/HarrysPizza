@@ -5,7 +5,7 @@ function Landing() {
   return (
     <>
       <div className={Styles.wrapper}>
-        <h1>Landing</h1>
+        <h1 className={Styles.h1}>Landing</h1>
       </div>
     </>
   );
