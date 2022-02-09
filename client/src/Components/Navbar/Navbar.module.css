@@ -1,7 +1,7 @@
 .wrapper {
   position: absolute;
   min-height: 6vh;
-  min-width: 100vw;
+  width: 100%;
   background: #fff;
   z-index: 1;
   text-align: center;

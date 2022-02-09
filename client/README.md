@@ -9,11 +9,11 @@
 ## onHover color animation for buttons
 ## Landing page with:
 ## Hero Banner with restaurant name front and center/////////////////////////////////////
-## Our story left and pic right
+## Our story right and pic left
 ## another hero banner with Fresh ingredients explaintaion
-## left pic and great recipes right
+## right pic and great recipes left
 ## another hero banner with locally owned info
-## left hours of operations and right map location
+## right hours of operations and left map location
 ## footer with contact information
 
 ## Menu page
